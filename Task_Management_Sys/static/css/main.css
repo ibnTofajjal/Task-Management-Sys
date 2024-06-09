@@ -1,0 +1,15 @@
+body {
+  background-color: #263b50;
+  color: white;
+}
+
+.nav-item {
+  width: 180px;
+  text-align: center;
+  padding: 10px;
+  background-color: #2a425a !important;
+  color: whitesmoke;
+  text-decoration: none;
+  border-radius: 4px;
+  border: 1px solid #33516e;
+}
