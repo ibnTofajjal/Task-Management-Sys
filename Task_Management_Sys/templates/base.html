@@ -21,9 +21,9 @@
       <h1 class="text-center">Task Management System</h1>
       <hr />
       <div class="d-flex justify-content-center justify-content-evenly">
-        <a href="#" class="nav-item">Home</a>
-        <a href="#" class="nav-item">Add Task</a>
-        <a href="#" class="nav-item">Add Category</a>
+        <a href="{% url "homepage" %}" class="nav-item">Show Tasks</a>
+        <a href="{% url "add_task" %}" class="nav-item">Add Task</a>
+        <a href="{% url "add_category" %}" class="nav-item">Add Category</a>
       </div>
     </div>
 
