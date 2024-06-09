@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from . import forms
+from Task.models import TaskModel
 
 # Create your views here.
 def add_task(request):
@@ -14,3 +15,9 @@ def add_task(request):
         taks_form = forms.TaskForm()
         return render(request,"add_task.html", {"forms": taks_form})
     
+
+
+def delete_task(request, id):
+    task = TaskModel.objects.get(pk=id)
+    task.delete()
+    return redirect('homepage')
