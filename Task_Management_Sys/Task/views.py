@@ -13,3 +13,4 @@ def add_task(request):
     else:
         taks_form = forms.TaskForm()
         return render(request,"add_task.html", {"forms": taks_form})
+    
